@@ -28,7 +28,7 @@ public class PatientServiceImpl implements PatientService {
 
     @Override
     public List<Patient> getPatients() {
-        List<Patient> patients = patientRepository.findAll();
+        List<Patient> patients = patientRepository.getAllPatients();
         if(patients.isEmpty()){
             throw new IllegalStateException(PATIENT_NOT_FOUND);
         }

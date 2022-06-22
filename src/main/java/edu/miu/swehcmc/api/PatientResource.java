@@ -20,12 +20,10 @@ import static edu.miu.swehcmc.constant.ResourceKeyConstant.PatientResourceConsta
 public class PatientResource {
 
     private final PatientService patientService;
-
     @Autowired
     public PatientResource(PatientService patientService) {
         this.patientService = patientService;
     }
-
 
     @GetMapping
     public ResponseEntity<?> getPatients(){
