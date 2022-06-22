@@ -19,7 +19,6 @@ import static edu.miu.swehcmc.constant.ResourceKeyConstant.PatientResourceConsta
 @RequestMapping(BASE_API + PATIENT_BASE)
 public class PatientResource {
     private final PatientService patientService;
-
     @Autowired
     public PatientResource(PatientService patientService) {
         this.patientService = patientService;

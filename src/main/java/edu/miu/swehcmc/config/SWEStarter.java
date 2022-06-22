@@ -35,8 +35,16 @@ public class SWEStarter {
                     "Paul Scholes",
                     "paul@miu.edu",
                     "(641) 002-0034",
-                    LocalDate.of(1990, Month.JANUARY,5));
-            patientRepository.saveAll(List.of(ryan, paul));
+                    LocalDate.of(1990, Month.APRIL,20));
+
+            Patient ronaldo = new Patient(
+                    "P1000003",
+                    "No",
+                    "Christiano Ronaldo",
+                    "cronaldo@miu.edu",
+                    "(641) 002-0036",
+                    LocalDate.of(1990, Month.FEBRUARY,12));
+            patientRepository.saveAll(List.of(ryan, paul, ronaldo));
         };
     }
 }
