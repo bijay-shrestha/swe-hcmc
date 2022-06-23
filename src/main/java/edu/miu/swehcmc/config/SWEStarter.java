@@ -28,7 +28,6 @@ public class SWEStarter {
                     "(641) 001-0012",
                     LocalDate.of(2000, Month.JANUARY,5));
 
-
             Patient paul = new Patient(
                     "P1000002",
                     "Yes",
